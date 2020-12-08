@@ -267,6 +267,13 @@ while True:
       con = 1
       a = 1
       print('imported all')
+     elif sun == 'create.int':
+        sun = input(w + bold + '. ')
+        try:
+          varint = int(input())
+          print(w + bold + 'Created varint')
+         except:
+           print(red + bold + 'ERROR\nMust me Intiger')
     elif sun == "console.random":
       if con and rand == 1:
         print('What is first the range?\n')
