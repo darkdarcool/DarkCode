@@ -264,7 +264,7 @@ while True:
         try:
           varint = int(input())
           print(w + bold + 'Created varint')
-         except:
+        except:
            print(red + bold + 'ERROR\nMust me Intiger')
     elif sun == "console.random":
       if con and rand == 1:
