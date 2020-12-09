@@ -1,4 +1,4 @@
-import os, time
+import os
 red = "\033[0;91m"
 w = "\033[0;37m"
 black = "\033[0;30m"
@@ -24,11 +24,9 @@ os.system('clear')
 varss = ['var1', 'var2', 'var3', 'var4']
 swindle = bold + blue + bold + "~/DarkScript? "
 ab = ''
-
 #################
 #ERROR STAEMENTS#
 #################
-
 def errors():
   if ('import') in sun:
     print(bold + red + red + bold +  'Syntax Error in: \n' + end + w + sun + '\n' + green + '   ^~~~~~~~\n' + red + bold + 'Try just "' + white + 'import' + red + bold +  '" next time.\n')
@@ -70,7 +68,6 @@ def errors():
 # END ERROR STATEMENTS #
 ########################
 comm = 0
-
 def banner():
   print(end + "┌────────────────────────────────────────┐");
   print("│                                        │");
@@ -100,7 +97,6 @@ while True:
         res = sun.partition(spl_word)[2]
         res = res.replace('$n', '\n') 
         res = res.replace('\')', '')
-
         print(res) 
     elif sun == 'window.out (var1)':
       try:
@@ -208,10 +204,7 @@ while True:
             elif value == 'string':
               var1 = str(ab)
       except:
-        print(red + bold + 'ERROR')
-
-        
-
+        print(red + bold + 'ERROR') 
     elif sun == "do {math}":
         try:
           adder, sun1, sun2 =  [x for x in input('. ').split()] 
@@ -253,7 +246,6 @@ while True:
                 break
     elif sun == 'console.python':
         if con == 1:
-
             print('Changing language to python....')
             time.sleep(2)
             print('Language changed to python')
