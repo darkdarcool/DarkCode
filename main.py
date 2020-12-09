@@ -259,7 +259,7 @@ while True:
       con = 1
       a = 1
       print('imported all')
-     elif sun == 'create.int':
+    elif sun == 'create.int':
         sun = input(w + bold + '. ')
         try:
           varint = int(input())
