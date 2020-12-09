@@ -179,6 +179,8 @@ while True:
         banner()
       else:
         errors()
+    elif sun == 'window.create//var.int':
+      
     elif sun == 'def {var}':
       try:
         var_name, value, ab = input(w + bold + '. ').split()
